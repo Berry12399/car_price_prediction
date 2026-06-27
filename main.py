@@ -1,15 +1,3 @@
-"""
-main.py
---------
-Entry point of the project. Run this file to:
-  1. Train both models (Linear Regression + Decision Tree)
-  2. Print evaluation metrics
-  3. Generate comparison charts (saved into outputs/)
-
-Usage (from VS Code terminal, inside the project folder):
-    python main.py
-"""
-
 import os
 import matplotlib.pyplot as plt
 import seaborn as sns
