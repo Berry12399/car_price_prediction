@@ -56,8 +56,7 @@ def build_feature_row(raw_input, feature_columns):
         col_name = f"{prefix}_{value}"
         if col_name in row:
             row[col_name] = 1
-        # if the category was the "dropped" baseline (drop_first=True) or
-        # an unseen category, all its dummy columns stay 0 -> that's fine.
+      
 
     return pd.DataFrame([row])[feature_columns]
 
