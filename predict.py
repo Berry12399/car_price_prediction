@@ -27,7 +27,7 @@ def get_user_input():
 
 
 def build_feature_row(raw_input, feature_columns):
-    """Turn the raw user input into the exact one-hot encoded row the model expects."""
+
     row = {col: 0 for col in feature_columns}
 
     # Numeric fields go in directly
