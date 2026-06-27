@@ -1,10 +1,3 @@
-"""
-train_models.py
------------------
-Trains a Linear Regression model and a Decision Tree Regressor on the
-car price data, evaluates both, and saves them to disk with joblib.
-"""
-
 import joblib
 import os
 import pandas as pd
