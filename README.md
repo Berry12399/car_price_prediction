@@ -64,12 +64,11 @@ source venv/bin/activate   # Mac/Linux
 pip install -r requirements.txt
 ```
 
-### Step 4 — Add your dataset
-Download the dataset from Kaggle and place it at:
-```
+### Step 4 — Adding dataset
+Downloaded dataset from Kaggle and place it at:
 data/raw_car_data.csv
-```
-(The project already includes a copy if you used the one you uploaded — just confirm it's there.)
+
+
 
 ### Step 5 — Clean the data
 ```bash
@@ -98,16 +97,7 @@ python predict.py
 Answer the prompts (manufacturer, mileage, engine volume, etc.) and get a
 predicted price from both models.
 
-### Step 9 — Experiment further
-- Try grouping rare manufacturers differently, or keep `Model` using
-  frequency encoding instead of dropping it entirely.
-- Tune `max_depth` in `train_models.py`'s Decision Tree to fight
-  overfitting/underfitting.
-- Add a `RandomForestRegressor` for a 3-way comparison.
-- Try log-transforming `Price` before training Linear Regression — it
-  often improves performance on skewed price data.
 
----
 
 ## Current results on this dataset
 
