@@ -1,28 +1,16 @@
-"""
-preprocessing.py
------------------
-Loads the CLEANED dataset (produced by clean_data.py) and turns it into
-clean, numeric, model-ready features.
-"""
-
 import pandas as pd
 
 CLEAN_PATH = "data/car_data_clean.csv"
 
 
 def load_data(path=CLEAN_PATH):
-    """Load the cleaned CSV into a pandas DataFrame."""
+    
     df = pd.read_csv(path)
     return df
 
 
 def preprocess(df):
-    """
-    Turn the cleaned dataframe into X (features) and y (target).
 
-    - One-hot encodes all categorical/text columns.
-    - Target column is 'Price'.
-    """
     data = df.copy()
 
     categorical_cols = [
