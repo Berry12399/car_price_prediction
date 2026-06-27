@@ -1,13 +1,3 @@
-"""
-predict.py
------------
-Loads the saved models (trained on the real cleaned dataset) and lets you
-predict the selling price of a car by entering its details in the terminal.
-
-Usage (AFTER running clean_data.py and main.py once):
-    python predict.py
-"""
-
 import joblib
 import pandas as pd
 
