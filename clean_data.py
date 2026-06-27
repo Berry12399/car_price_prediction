@@ -1,16 +1,3 @@
-"""
-clean_data.py
---------------
-Cleans the raw Kaggle "Car Price Prediction" dataset
-(data/raw_car_data.csv) and saves an analysis-ready CSV to
-data/car_data_clean.csv.
-
-Run this BEFORE preprocessing.py / main.py when using the real dataset.
-
-Usage:
-    python clean_data.py
-"""
-
 import pandas as pd
 import numpy as np
 import os
